@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import configData from "data/config.json";
 
 interface IConfig {
   testType: "SCORE" | "CLASSIFY";
@@ -19,21 +20,7 @@ interface IConfig {
 }
 
 const initialState: IConfig = {
-  testType: "CLASSIFY",
-  buttonType: "SOFT",
-  layout: "IMAGE",
-  color: {
-    backgroundColor: "white",
-    accentColor: "rgb(255, 153, 204)",
-    accentShadowColor: "rgba(255, 153, 204, 50%)",
-  },
-  animation: {
-    type: "fade-up",
-    duration: "1500",
-  },
-  title: "나의 봄나들이 패션스타일은?",
-  subTitle: "벚꽃놀이 취향으로 보는 봄패션 MBTI",
-  startButtonText: "테스트 시작하기",
+  ...(configData as IConfig),
 };
 
 const configSlice = createSlice({

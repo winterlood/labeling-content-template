@@ -1,0 +1,36 @@
+.outter {
+  width: 90%;
+}
+.inner:hover {
+  transform: translateY(-4px);
+}
+.inner {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out 0s,
+    background-color 0.2s ease-in-out 0s;
+  word-break: keep-all !important;
+  border-radius: 12px;
+  width: 90%;
+  margin: auto;
+  min-height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -0.5px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  // font-weight: 500;
+  line-height: 24px !important;
+  text-align: center;
+  white-space: pre-line;
+}

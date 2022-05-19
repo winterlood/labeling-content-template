@@ -1,0 +1,23 @@
+.conatiner {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .loading_text {
+    margin-top: 5px;
+  }
+
+  .SuccessContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img {
+      width: 50px;
+    }
+  }
+}

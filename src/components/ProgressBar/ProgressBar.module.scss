@@ -1,0 +1,58 @@
+.ProgressText {
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  visibility: visible;
+
+  text-align: right;
+  right: 0px;
+  left: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+
+  span {
+    font-family: "Nanum Gothic", sans-serif !important;
+    font-size: 11px;
+  }
+}
+.ProgressBar {
+  width: 70%;
+  opacity: 1;
+  visibility: visible;
+  right: 0px;
+  left: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 25px;
+  top: 0px;
+  border-radius: 100px;
+
+  .inner {
+    background-color: rgba(0, 0, 0, 0.07);
+    height: 20px;
+
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    transform: translate3D(0, 0, 0);
+    -webkit-font-smoothing: subpixel-antialiased;
+    border-radius: 100px;
+    margin: auto;
+    overflow-x: hidden;
+    .progress {
+      height: 20px;
+      border-radius: 100px;
+      max-width: 100%;
+      min-width: 0.01px;
+      position: relative;
+      transform-origin: 0 50%;
+      transition: width 0.8s cubic-bezier(0.075, 0.82, 0.165, 1),
+        background-color 0.2s ease-in-out;
+    }
+  }
+}
